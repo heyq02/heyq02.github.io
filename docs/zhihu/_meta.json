@@ -5,13 +5,15 @@
     "label": "总览"
   },
   {
-    "type": "dir-section-header",
+    "type": "dir",
     "name": "2026-09",
-    "label": "2026-09"
+    "label": "2026-09",
+    "collapsed": false
   },
   {
-    "type": "dir-section-header",
+    "type": "dir",
     "name": "2026-10",
-    "label": "2026-10"
+    "label": "2026-10",
+    "collapsed": false
   }
 ]

@@ -17,18 +17,6 @@ export default defineConfig({
   llms: true,
   ssg: true,
   themeConfig: {
-    nav: [
-      {
-        text: '社会思考',
-        link: '/zhihu/',
-        icon: 'https://cdn.simpleicons.org/zhihu',
-      },
-      {
-        text: '技术博文',
-        link: '/juejin/',
-        icon: 'https://cdn.simpleicons.org/juejin',
-      },
-    ],
     lastUpdated: true,
     socialLinks: [
       {
