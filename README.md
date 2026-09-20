@@ -1,5 +1,7 @@
 # Rspress website
 
+[![Deploy Rspress site to Pages](https://github.com/heyq02/www.heyq02.com/actions/workflows/deploy.yml/badge.svg)](https://github.com/heyq02/www.heyq02.com/actions/workflows/deploy.yml)
+
 ## Setup
 
 Install the dependencies:
