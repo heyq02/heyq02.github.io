@@ -45,8 +45,8 @@ export default defineConfig({
       },
       {
         icon: 'wechat',
-        mode: 'text',
-        content: '微信号 bjmhe02'
+        mode: 'img',
+        content: '/qr/wechat-qr.png'
       },
       {
         icon: 'github',
