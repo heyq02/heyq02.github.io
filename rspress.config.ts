@@ -33,9 +33,6 @@ export default defineConfig({
       },
 
     ],
-    footer: {
-      message: 'Powered by Rspress',
-    },
     lastUpdated: true,
     socialLinks: [
       {
