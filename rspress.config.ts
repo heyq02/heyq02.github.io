@@ -6,8 +6,8 @@ import { pluginRss } from '@rspress/plugin-rss';
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
   siteOrigin: 'https://heyq02.github.io',
-  title: 'HeyQ02',
-  description: "HeyQ02's blog",
+  title: 'Aure的博客',
+  description: "Aure's blog",
   icon: '/rspress-icon.png',
   lang: 'zh',
   logo: {
@@ -15,7 +15,7 @@ export default defineConfig({
     dark: '/rspress-dark-logo.png',
   },
   logoHref: '/',
-  logoText: 'HeyQ02',
+  logoText: "Aure's Space",
   head: [['meta', { name: 'author', content: 'Aure' }]],
   llms: true,
   ssg: true,
@@ -31,13 +31,12 @@ export default defineConfig({
         link: '/juejin',
         icon: 'https://cdn.simpleicons.org/juejin',
       },
-
     ],
     sidebar: {
       '/zhihu/': [
         {
           text: '明天吃什么',
-          link: '/zhihu/2026-10/明天吃什么'
+          link: '/zhihu/2026-10/明天吃什么',
         },
         {
           text: '今天吃什么',
@@ -50,12 +49,12 @@ export default defineConfig({
       {
         icon: 'x',
         mode: 'link',
-        content: 'https://x.com/heyq02'
+        content: 'https://x.com/heyq02',
       },
       {
         icon: 'wechat',
         mode: 'img',
-        content: '/qr/wechat-qr.png'
+        content: '/qr/wechat-qr.png',
       },
       {
         icon: 'github',
@@ -64,7 +63,7 @@ export default defineConfig({
       },
     ],
     enableContentAnimation: true,
-    enableAppearanceAnimation: true
+    enableAppearanceAnimation: true,
   },
   plugins: [
     pluginSitemap({
