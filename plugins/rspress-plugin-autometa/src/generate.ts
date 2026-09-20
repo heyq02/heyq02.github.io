@@ -153,11 +153,9 @@ export async function buildMetaItems(
         continue;
       }
 
-      const indexFile = await findIndexFile(fullPath);
-      const label =
-        indexFile === undefined
-          ? entry.name
-          : String((await readFrontmatter(indexFile)).title ?? entry.name);
+      const label = isYearMonth(entry.name)
+        ? entry.name
+        : await resolveDirLabel(fullPath, entry.name);
       dirs.push({ name: entry.name, label });
       continue;
     }
@@ -168,11 +166,13 @@ export async function buildMetaItems(
     }
 
     if (name === 'index') {
-      indexItem = {
-        type: 'file',
-        name: 'index',
-        label: options.indexLabel,
-      };
+      if (!isYearMonth(path.basename(dir))) {
+        indexItem = {
+          type: 'file',
+          name: 'index',
+          label: options.indexLabel,
+        };
+      }
       continue;
     }
 
@@ -203,6 +203,14 @@ export async function buildMetaItems(
   }
 
   return items;
+}
+
+async function resolveDirLabel(dir: string, fallback: string): Promise<string> {
+  const indexFile = await findIndexFile(dir);
+  if (indexFile === undefined) {
+    return fallback;
+  }
+  return String((await readFrontmatter(indexFile)).title ?? fallback);
 }
 
 async function findIndexFile(dir: string): Promise<string | undefined> {

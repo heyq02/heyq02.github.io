@@ -21,14 +21,6 @@ nav: 社会思考
 `,
   );
   await fs.writeFile(
-    path.join(root, 'zhihu', '2026-09', 'index.md'),
-    `---
-overview: true
-title: 2026-09
----
-`,
-  );
-  await fs.writeFile(
     path.join(root, 'zhihu', '2026-09', 'article1.md'),
     `---
 sort: 1
@@ -39,14 +31,6 @@ sort: 1
     path.join(root, 'zhihu', '2026-09', 'article2.md'),
     `---
 sort: 2
----
-`,
-  );
-  await fs.writeFile(
-    path.join(root, 'zhihu', '2026-10', 'index.md'),
-    `---
-overview: true
-title: 2026-10
 ---
 `,
   );
@@ -85,11 +69,7 @@ test('generates overview _meta.json for nested month archives', async () => {
       'utf8',
     ),
   ) as unknown;
-  expect(monthMeta).toEqual([
-    { type: 'file', name: 'index', label: '总览' },
-    'article1',
-    'article2',
-  ]);
+  expect(monthMeta).toEqual(['article1', 'article2']);
 
   await expect(fs.stat(path.join(root, '_meta.json'))).rejects.toMatchObject({
     code: 'ENOENT',

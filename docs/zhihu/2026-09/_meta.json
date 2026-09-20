@@ -1,9 +1,4 @@
 [
-  {
-    "type": "file",
-    "name": "index",
-    "label": "总览"
-  },
   "article1",
   "article2"
 ]
