@@ -36,30 +36,12 @@ export default defineConfig({
     sidebar: {
       '/zhihu/': [
         {
-          text: '2026-10',
-          items: [
-            {
-              text: '明天吃什么',
-              link: '/zhihu/2026-10/明天吃什么'
-            },
-            {
-              text: '今天吃什么',
-              link: '/zhihu/2026-10/今天吃什么',
-            },
-          ],
+          text: '明天吃什么',
+          link: '/zhihu/2026-10/明天吃什么'
         },
         {
-          text: '2026-09',
-          items: [
-            {
-              text: '明天吃什么',
-              link: '/zhihu/2026-09/明天吃什么',
-            },
-            {
-              text: '今天吃什么',
-              link: '/zhihu/2026-09/今天吃什么',
-            },
-          ],
+          text: '今天吃什么',
+          link: '/zhihu/2026-10/今天吃什么',
         },
       ],
     },
