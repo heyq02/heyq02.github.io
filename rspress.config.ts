@@ -2,6 +2,7 @@ import * as path from 'node:path';
 import { defineConfig } from '@rspress/core';
 import { pluginSitemap } from '@rspress/plugin-sitemap';
 import { pluginRss } from '@rspress/plugin-rss';
+import { pluginAutoSidebar } from 'rspress-plugin-auto-sidebar';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
@@ -17,40 +18,40 @@ export default defineConfig({
   llms: true,
   ssg: true,
   themeConfig: {
-    nav: [
-      {
-        text: '社会思考',
-        link: '/zhihu',
-        icon: 'https://cdn.simpleicons.org/zhihu',
-      },
-      {
-        text: '技术博文',
-        link: '/juejin',
-        icon: 'https://cdn.simpleicons.org/juejin',
-      },
-    ],
-    sidebar: {
-      '/': [
-        {
-          text: '社会思考',
-          link: '/zhihu',
-        },
-        {
-          text: '技术博文',
-          link: '/juejin',
-        },
-      ],
-      '/zhihu/': [
-        {
-          text: '明天吃什么',
-          link: '/zhihu/2026-10/明天吃什么',
-        },
-        {
-          text: '今天吃什么',
-          link: '/zhihu/2026-10/今天吃什么',
-        },
-      ],
-    },
+    // nav: [
+    //   {
+    //     text: '社会思考',
+    //     link: '/zhihu',
+    //     icon: 'https://cdn.simpleicons.org/zhihu',
+    //   },
+    //   {
+    //     text: '技术博文',
+    //     link: '/juejin',
+    //     icon: 'https://cdn.simpleicons.org/juejin',
+    //   },
+    // ],
+    // sidebar: {
+    //   '/': [
+    //     {
+    //       text: '社会思考',
+    //       link: '/zhihu',
+    //     },
+    //     {
+    //       text: '技术博文',
+    //       link: '/juejin',
+    //     },
+    //   ],
+    //   '/zhihu/': [
+    //     {
+    //       text: '明天吃什么',
+    //       link: '/zhihu/2026-10/明天吃什么',
+    //     },
+    //     {
+    //       text: '今天吃什么',
+    //       link: '/zhihu/2026-10/今天吃什么',
+    //     },
+    //   ],
+    // },
     lastUpdated: true,
     socialLinks: [
       {
@@ -78,6 +79,23 @@ export default defineConfig({
     }),
     pluginRss({
       siteUrl: 'https://heyq02.github.io',
+    }),
+    pluginAutoSidebar({
+      reverse: true,
+      navbar: [
+        {
+          text: '社会思考',
+          link: '/zhihu/',
+          scanDir: '/zhihu/',
+          icon: 'https://cdn.simpleicons.org/zhihu',
+        },
+        {
+          text: '技术博文',
+          link: '/juejin/',
+          scanDir: '/juejin/',
+          icon: 'https://cdn.simpleicons.org/juejin',
+        },
+      ],
     }),
   ],
 });
