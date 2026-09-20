@@ -2,14 +2,13 @@ import * as path from 'node:path';
 import { defineConfig } from '@rspress/core';
 import { pluginSitemap } from '@rspress/plugin-sitemap';
 import { pluginRss } from '@rspress/plugin-rss';
-import { pluginAutoSidebar } from 'rspress-plugin-auto-sidebar';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
   siteOrigin: 'https://heyq02.github.io',
   title: 'Aure的博客',
   description: "Aure's blog",
-  icon: '/rspress-icon.png',
+  icon: '/avatar.png',
   lang: 'zh',
   logo: 'https://avatars.githubusercontent.com/u/206218794?v=4',
   logoHref: '/',
@@ -18,6 +17,18 @@ export default defineConfig({
   llms: true,
   ssg: true,
   themeConfig: {
+    nav: [
+      {
+        text: '社会思考',
+        link: '/zhihu/',
+        icon: 'https://cdn.simpleicons.org/zhihu',
+      },
+      {
+        text: '技术博文',
+        link: '/juejin/',
+        icon: 'https://cdn.simpleicons.org/juejin',
+      },
+    ],
     lastUpdated: true,
     socialLinks: [
       {
@@ -45,23 +56,6 @@ export default defineConfig({
     }),
     pluginRss({
       siteUrl: 'https://heyq02.github.io',
-    }),
-    pluginAutoSidebar({
-      reverse: true,
-      navbar: [
-        {
-          text: '社会思考',
-          link: '/zhihu/',
-          scanDir: '/zhihu/',
-          icon: 'https://cdn.simpleicons.org/zhihu',
-        },
-        {
-          text: '技术博文',
-          link: '/juejin/',
-          scanDir: '/juejin/',
-          icon: 'https://cdn.simpleicons.org/juejin',
-        },
-      ],
-    }),
+    })
   ],
 });
