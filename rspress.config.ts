@@ -51,9 +51,11 @@ export default defineConfig({
       {
         icon: 'github',
         mode: 'link',
-        content: 'https://github.com/web-infra-dev/rspress',
+        content: 'https://github.com/heyq02/heyq02.github.io',
       },
     ],
+    enableContentAnimation: true,
+    enableAppearanceAnimation: true
   },
   plugins: [
     pluginSitemap({
