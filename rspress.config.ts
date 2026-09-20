@@ -5,14 +5,22 @@ import { pluginRss } from '@rspress/plugin-rss';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
-  lang: 'en',
-  title: 'My Site',
+  siteOrigin: 'https://heyq02.github.io',
+  title: 'HeyQ02',
+  description: 'HeyQ02\'s blog',
   icon: '/rspress-icon.png',
-  llms: true,
+  lang: 'zh',
   logo: {
     light: '/rspress-light-logo.png',
     dark: '/rspress-dark-logo.png',
   },
+  logoHref: '/',
+  logoText: 'HeyQ02',
+  head: [
+    ['meta', { name: 'author', content: 'Aure' }]
+  ],
+  llms: true,
+  ssg: true,
   themeConfig: {
     socialLinks: [
       {
