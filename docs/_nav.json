@@ -10,5 +10,9 @@
     "link": "/juejin/",
     "activeMatch": "/juejin/",
     "icon": "https://cdn.simpleicons.org/juejin"
+  },
+  {
+    "text": "个人简历",
+    "link": "https://heyq02.github.io/resume/"
   }
 ]
