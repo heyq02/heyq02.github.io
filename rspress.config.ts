@@ -22,32 +22,23 @@ export default defineConfig({
   themeConfig: {
     nav: [
       {
-        text: '',
+        text: '社会思考',
         link: '/zhihu',
         icon: 'https://cdn.simpleicons.org/zhihu',
       },
       {
-        text: '',
-        link: '/csdn',
-        icon: 'https://cdn.simpleicons.org/csdn',
+        text: '技术博文',
+        link: '/juejin',
+        icon: 'https://cdn.simpleicons.org/juejin',
       },
-      {
-        text: '',
-        link: '/zhihu',
-        icon: 'https://cdn.simpleicons.org/juejin'
-      },
-      {
-        text: '',
-        link: '/zhihu',
-        icon: '/icons/抖音.svg'
-      },
-      {
-        text: '',
-        link: '/zhihu',
-        icon: 'https://cdn.simpleicons.org/bilibili'
-      }
+
     ],
     socialLinks: [
+      {
+        icon: 'x',
+        mode: 'link',
+        content: 'https://x.com/heyq02'
+      },
       {
         icon: 'github',
         mode: 'link',
