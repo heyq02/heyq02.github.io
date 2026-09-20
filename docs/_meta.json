@@ -1,0 +1,12 @@
+[
+    {
+      "type": "dir-section-header",
+      "name": "zhihu",
+      "label": "Zhihu"
+    },
+    {
+      "type": "dir-section-header",
+      "name": "juejin",
+      "label": "Juejin"
+    }
+  ]

@@ -10,10 +10,7 @@ export default defineConfig({
   description: "Aure's blog",
   icon: '/rspress-icon.png',
   lang: 'zh',
-  logo: {
-    light: '/rspress-light-logo.png',
-    dark: '/rspress-dark-logo.png',
-  },
+  logo: 'https://avatars.githubusercontent.com/u/206218794?v=4',
   logoHref: '/',
   logoText: "Aure's Space",
   head: [['meta', { name: 'author', content: 'Aure' }]],
@@ -33,6 +30,16 @@ export default defineConfig({
       },
     ],
     sidebar: {
+      '/': [
+        {
+          text: '社会思考',
+          link: '/zhihu',
+        },
+        {
+          text: '技术博文',
+          link: '/juejin',
+        },
+      ],
       '/zhihu/': [
         {
           text: '明天吃什么',
