@@ -1,12 +1,17 @@
 [
-    {
-      "type": "dir-section-header",
-      "name": "2026-09",
-      "label": "2026-09"
-    },
-    {
-      "type": "dir-section-header",
-      "name": "2026-10",
-      "label": "2026-10"
-    }
-  ]
+  {
+    "type": "file",
+    "name": "index",
+    "label": "总览"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "2026-09",
+    "label": "2026-09"
+  },
+  {
+    "type": "dir-section-header",
+    "name": "2026-10",
+    "label": "2026-10"
+  }
+]

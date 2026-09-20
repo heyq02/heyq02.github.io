@@ -56,6 +56,6 @@ export default defineConfig({
     }),
     pluginRss({
       siteUrl: 'https://heyq02.github.io',
-    })
+    }),
   ],
 });
