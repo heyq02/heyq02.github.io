@@ -25,7 +25,26 @@ export default defineConfig({
         text: '',
         link: '/zhihu',
         icon: 'https://cdn.simpleicons.org/zhihu',
-        tag: '回答'
+      },
+      {
+        text: '',
+        link: '/csdn',
+        icon: 'https://cdn.simpleicons.org/csdn',
+      },
+      {
+        text: '',
+        link: '/zhihu',
+        icon: 'https://cdn.simpleicons.org/juejin'
+      },
+      {
+        text: '',
+        link: '/zhihu',
+        icon: '/icons/抖音.svg'
+      },
+      {
+        text: '',
+        link: '/zhihu',
+        icon: 'https://cdn.simpleicons.org/bilibili'
       }
     ],
     socialLinks: [
