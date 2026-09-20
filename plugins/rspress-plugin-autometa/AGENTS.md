@@ -1,5 +1,7 @@
 # AGENTS.md
 
+Private workspace plugin. It writes `_meta.json` for each docs subdirectory during the Rspress `config` hook so Overview pages and sidebars stay in sync with the file tree. Do not publish it.
+
 ## Commands
 
 - `pnpm run build` - Build the library for production

@@ -1,5 +1,7 @@
 # AGENTS.md
 
+Private workspace plugin. It writes the docs-root `_nav.json` from first-level directories and their index frontmatter (`nav`, `title`, `icon`, `sort`) during the Rspress `config` hook. Do not publish it.
+
 ## Commands
 
 - `pnpm run build` - Build the library for production

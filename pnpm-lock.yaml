@@ -39,6 +39,12 @@ importers:
       react-dom:
         specifier: 19.3.0
         version: 19.3.0(react@19.3.0)
+      rspress-plugin-autometa:
+        specifier: workspace:*
+        version: link:plugins/rspress-plugin-autometa
+      rspress-plugin-autonav:
+        specifier: workspace:*
+        version: link:plugins/rspress-plugin-autonav
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -48,24 +54,36 @@ importers:
       '@rslib/core':
         specifier: 1.0.1
         version: 1.0.1(typescript@6.0.3)
+      '@rspress/core':
+        specifier: 2.0.22
+        version: 2.0.22(@rspack/core@2.2.6(@swc/helpers@0.5.23))(micromark-util-types@2.0.2)(micromark@4.0.2)
       '@rstest/adapter-rslib':
         specifier: 0.12.0
         version: 0.12.0(@rslib/core@1.0.1(typescript@6.0.3))(@rstest/core@0.12.0)(typescript@6.0.3)
       '@rstest/core':
         specifier: 0.12.0
         version: 0.12.0
+      '@types/node':
+        specifier: 22.20.4
+        version: 22.20.4
 
   plugins/rspress-plugin-autonav:
     devDependencies:
       '@rslib/core':
         specifier: 1.0.1
         version: 1.0.1(typescript@6.0.3)
+      '@rspress/core':
+        specifier: 2.0.22
+        version: 2.0.22(@rspack/core@2.2.6(@swc/helpers@0.5.23))(micromark-util-types@2.0.2)(micromark@4.0.2)
       '@rstest/adapter-rslib':
         specifier: 0.12.0
         version: 0.12.0(@rslib/core@1.0.1(typescript@6.0.3))(@rstest/core@0.12.0)(typescript@6.0.3)
       '@rstest/core':
         specifier: 0.12.0
         version: 0.12.0
+      '@types/node':
+        specifier: 22.20.4
+        version: 22.20.4
 
 packages:
 

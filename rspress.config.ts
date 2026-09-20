@@ -2,6 +2,8 @@ import * as path from 'node:path';
 import { defineConfig } from '@rspress/core';
 import { pluginSitemap } from '@rspress/plugin-sitemap';
 import { pluginRss } from '@rspress/plugin-rss';
+import { pluginAutometa } from 'rspress-plugin-autometa';
+import { pluginAutonav } from 'rspress-plugin-autonav';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
@@ -39,6 +41,11 @@ export default defineConfig({
     enableAppearanceAnimation: true,
   },
   plugins: [
+    pluginAutonav(),
+    pluginAutometa({
+      indexLabel: '总览',
+      collapsed: false,
+    }),
     pluginSitemap({
       siteUrl: 'https://heyq02.github.io',
     }),

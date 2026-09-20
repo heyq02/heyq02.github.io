@@ -2,13 +2,13 @@
   {
     "text": "社会思考",
     "link": "/zhihu/",
-    "icon": "https://cdn.simpleicons.org/zhihu",
-    "activeMatch": "/zhihu/"
+    "activeMatch": "/zhihu/",
+    "icon": "https://cdn.simpleicons.org/zhihu"
   },
   {
     "text": "技术博文",
     "link": "/juejin/",
-    "icon": "https://cdn.simpleicons.org/juejin",
-    "activeMatch": "/juejin/"
+    "activeMatch": "/juejin/",
+    "icon": "https://cdn.simpleicons.org/juejin"
   }
 ]
