@@ -33,11 +33,20 @@ export default defineConfig({
       },
 
     ],
+    footer: {
+      message: 'Powered by Rspress',
+    },
+    lastUpdated: true,
     socialLinks: [
       {
         icon: 'x',
         mode: 'link',
         content: 'https://x.com/heyq02'
+      },
+      {
+        icon: 'wechat',
+        mode: 'text',
+        content: '微信号 bjmhe02'
       },
       {
         icon: 'github',
