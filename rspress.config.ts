@@ -7,7 +7,7 @@ export default defineConfig({
   root: path.join(__dirname, 'docs'),
   siteOrigin: 'https://heyq02.github.io',
   title: 'HeyQ02',
-  description: 'HeyQ02\'s blog',
+  description: "HeyQ02's blog",
   icon: '/rspress-icon.png',
   lang: 'zh',
   logo: {
@@ -16,9 +16,7 @@ export default defineConfig({
   },
   logoHref: '/',
   logoText: 'HeyQ02',
-  head: [
-    ['meta', { name: 'author', content: 'Aure' }]
-  ],
+  head: [['meta', { name: 'author', content: 'Aure' }]],
   llms: true,
   ssg: true,
   themeConfig: {
@@ -30,9 +28,12 @@ export default defineConfig({
       },
     ],
   },
-  plugins: [pluginSitemap({
-    siteUrl: 'https://heyq02.github.io'
-  }), pluginRss({
-    siteUrl: 'https://heyq02.github.io'
-  })],
+  plugins: [
+    pluginSitemap({
+      siteUrl: 'https://heyq02.github.io',
+    }),
+    pluginRss({
+      siteUrl: 'https://heyq02.github.io',
+    }),
+  ],
 });
