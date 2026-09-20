@@ -20,6 +20,14 @@ export default defineConfig({
   llms: true,
   ssg: true,
   themeConfig: {
+    nav: [
+      {
+        text: '',
+        link: '/zhihu',
+        icon: 'https://cdn.simpleicons.org/zhihu',
+        tag: '回答'
+      }
+    ],
     socialLinks: [
       {
         icon: 'github',
