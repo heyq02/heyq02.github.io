@@ -1,15 +1,15 @@
 [
   {
-    "text": "社会思考",
-    "link": "/zhihu/",
-    "activeMatch": "/zhihu/",
-    "icon": "https://cdn.simpleicons.org/zhihu"
-  },
-  {
     "text": "技术博文",
     "link": "/juejin/",
     "activeMatch": "/juejin/",
     "icon": "https://cdn.simpleicons.org/juejin"
+  },
+  {
+    "text": "阅读&思考",
+    "link": "/zhihu/",
+    "activeMatch": "/zhihu/",
+    "icon": "https://cdn.simpleicons.org/zhihu"
   },
   {
     "text": "个人简历",
